@@ -1,0 +1,74 @@
+body{
+	background-image: url("background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+#container2{
+
+background: white;
+margin: 80px 450px 10px;
+border: 3px solid white; 
+width: 430px;
+padding: 7px 3px 35px 3px;
+}
+
+img{
+	margin: 30px 50px 0px;
+
+}
+
+
+a{
+		width: 0px; 
+		padding: 8px 30px;
+		margin: 15px 250px 80px 265px;
+		color: white;
+		background: #396FDC;
+		border: 0px solid #396FDC ;
+		font-family: "Segoe UI";
+		font-size: 16px;
+		cursor: pointer;
+		outline:none;
+		text-decoration: none;
+ 
+}
+
+h4{
+ margin: 0px 65px;
+ font-family: "Segoe UI";
+ color: #75C623;
+ font-size: 16px;
+ text-decoration: none;
+ cursor: pointer;
+ 
+}
+
+
+b:hover{
+	color: #ccc;
+	text-decoration: underline;
+	
+}
+
+h3:hover{
+	text-decoration: underline;
+	
+}
+
+
+h5:hover{
+	text-decoration: underline;
+	
+}
+
+div{
+	position: absolute;
+	margin: -15px 0px 150px 175px;
+}
+
+
+
+
+}
